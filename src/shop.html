@@ -16,7 +16,15 @@
     Content
     Footer
   -->
-
+  <header>
+    <div class="flex flex-row space-x-4 bg-slate-600 p-3 m-auto place-content-center text-white text-xs">
+        <p>Fri fragt</p>
+        <p>|</p>
+        <p>Dag-til-dag levering</p>
+        <p>|</p>
+        <p>Bæredygtig print </p>
+    </div>
+</header>
   <!-- Highlight start -->
   
   <!-- Hightlight slut -->
@@ -428,21 +436,33 @@
       </div>
     </div>
     <!-- Navigation slut -->
-    <!-- ny filtrering  -->
+
+    <!-- Content -->
+    <div class="2xl:container 2xl:mx-auto">
+      <div class="px-4 py-8 md:px-6 md:py-12 lg:px-20">
+        <div class="mx-auto max-w-sm">
+          <h1
+            class="text-center text-3xl font-semibold text-gray-800 lg:text-4xl"
+          >
+            Plakater
+          </h1>
+          <p class="pt-8 text-center">
+            Her finder du vores udvalg af flotte kunstplakater, klar til at
+            komme op og hænge på din væg;-)
+          </p>
+          <p class="pt-8 text-center text-base leading-normal sm:leading-4">
+            Kategorier: <a href="kategori.html" class="underline">Naturen</a> /
+            <a href="kategori.html" class="underline">Byen</a> /
+            <a href="kategori.html" class="underline">Sort/hvid</a> /
+            <a href="kategori.html" class="underline">Minimalisme</a>
+          </p>
+        </div>
+            <!-- ny filtrering  -->
 
     <div class="2xl:container 2xl:mx-auto">
       <div class="py-9 px-4 md:py-12 md:px-6 lg:px-20">
-        <p
-          class="mb-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-400"
-        >
-          Home - Men - Products - Filters
-        </p>
+
         <div class="mb-4 flex items-center justify-between">
-          <h2
-            class="text-3xl font-semibold leading-7 text-gray-800 dark:text-white lg:text-4xl lg:leading-9"
-          >
-            Plakater
-          </h2>
 
           <!-- filters Button (md and plus Screen) -->
           <button
@@ -460,11 +480,7 @@
             Filters
           </button>
         </div>
-        <p
-          class="text-xl font-medium leading-5 text-gray-600 dark:text-gray-400"
-        >
-          100 plakater
-        </p>
+
 
         <!-- Filters Button (Small Screen) -->
 
@@ -507,6 +523,100 @@
             alt="cross"
           />
         </div>
+        <!-- Kategori section  -->
+        <div>
+          <div class="flex space-x-2 text-gray-800 dark:text-white">
+            <img
+              class="dark:hidden"
+              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/filter1-svg5.svg"
+              alt="size"
+            />
+            <img
+              class="hidden dark:block"
+              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/filter1-svg5dark.svg"
+              alt="size"
+            />
+            <p class="text-xl font-medium leading-5 lg:text-2xl lg:leading-6">
+              Kategori
+            </p>
+          </div>
+          <div class="">
+            <div class="">
+              <input
+                class="mr-2 h-4 w-4"
+                type="checkbox"
+                id="Large"
+                name="Large"
+                value="Large"
+              />
+              <div class="inline-block">
+                <div class="pt-2">
+                  <label
+                    class="mr-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-300"
+                    for="Large"
+                    >Natur</label
+                  >
+                </div>
+              </div>
+            <div class="">
+              <input
+                class="mr-2 h-4 w-4"
+                type="checkbox"
+                id="Large"
+                name="Large"
+                value="Large"
+              />
+              <div class="inline-block">
+                <div class="pt-1">
+                  <label
+                    class="mr-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-300"
+                    for="Large"
+                    >By</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pt-1">
+              <input
+                class="mr-2 h-4 w-4"
+                type="checkbox"
+                id="Large"
+                name="Large"
+                value="Large"
+              />
+              <div class="inline-block">
+                <div class="">
+                  <label
+                    class="mr-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-300"
+                    for="Large"
+                    >Populærer</label
+                  >
+                </div>
+              </div>
+            </div>          
+            <div class="pt-1">
+              <input
+                class="mr-2 h-4 w-4"
+                type="checkbox"
+                id="Large"
+                name="Large"
+                value="Large"
+              />
+              <div class="inline-block">
+                <div class="">
+                  <label
+                    class="mr-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-300"
+                    for="Large"
+                    >Bestseller 2022</label
+                  >
+                </div>
+              </div>
+            </div>          
+           
+            </div>
+          </div>
+        </div>
+      <!-- kategori section slut -->
 
         <!-- Colors Section -->
         <div>
@@ -526,18 +636,8 @@
             </p>
           </div>
           <div
-            class="grid gap-6"
+            class="grid gap-4"
           >
-            <div
-              class=""
-            >
-              <div class="h-4 w-4 rounded-full bg-white shadow"></div>
-              
-            </div>
-            <div class="">
-              <div class="h-4 w-4 rounded-full bg-blue-600 shadow"></div>
-              
-            </div>
             <div
               class=""
             >
@@ -569,100 +669,8 @@
             </div>
           </div>
         </div>
-        <!-- Kategori section  -->
-        <div>
-            <div class="flex space-x-2 text-gray-800 dark:text-white">
-              <img
-                class="dark:hidden"
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/filter1-svg5.svg"
-                alt="size"
-              />
-              <img
-                class="hidden dark:block"
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/filter1-svg5dark.svg"
-                alt="size"
-              />
-              <p class="text-xl font-medium leading-5 lg:text-2xl lg:leading-6">
-                Kategori
-              </p>
-            </div>
-            <div class="">
-              <div class="">
-                <input
-                  class="mr-2 h-4 w-4"
-                  type="checkbox"
-                  id="Large"
-                  name="Large"
-                  value="Large"
-                />
-                <div class="inline-block">
-                  <div class="pt-2">
-                    <label
-                      class="mr-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-300"
-                      for="Large"
-                      >Natur</label
-                    >
-                  </div>
-                </div>
-              <div class="">
-                <input
-                  class="mr-2 h-4 w-4"
-                  type="checkbox"
-                  id="Large"
-                  name="Large"
-                  value="Large"
-                />
-                <div class="inline-block">
-                  <div class="pt-1">
-                    <label
-                      class="mr-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-300"
-                      for="Large"
-                      >By</label
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="pt-1">
-                <input
-                  class="mr-2 h-4 w-4"
-                  type="checkbox"
-                  id="Large"
-                  name="Large"
-                  value="Large"
-                />
-                <div class="inline-block">
-                  <div class="">
-                    <label
-                      class="mr-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-300"
-                      for="Large"
-                      >Populærer</label
-                    >
-                  </div>
-                </div>
-              </div>          
-              <div class="pt-1">
-                <input
-                  class="mr-2 h-4 w-4"
-                  type="checkbox"
-                  id="Large"
-                  name="Large"
-                  value="Large"
-                />
-                <div class="inline-block">
-                  <div class="">
-                    <label
-                      class="mr-2 text-sm font-normal leading-3 text-gray-600 dark:text-gray-300"
-                      for="Large"
-                      >Bestseller 2022</label
-                    >
-                  </div>
-                </div>
-              </div>          
-             
-              </div>
-            </div>
-          </div>
-        <!-- kategori section slut -->
+         <!-- Colors Section slut-->
+        
         <!-- Size Section -->
         <div>
           <div class="flex space-x-2 text-gray-800 dark:text-white">
@@ -887,26 +895,6 @@
     </style>
 
     <!-- ny filtrering slut  -->
-    <!-- Content -->
-    <div class="2xl:container 2xl:mx-auto">
-      <div class="px-4 py-8 md:px-6 md:py-12 lg:px-20">
-        <div class="mx-auto max-w-sm">
-          <h1
-            class="text-center text-3xl font-semibold text-gray-800 lg:text-4xl"
-          >
-            Plakater
-          </h1>
-          <p class="pt-8 text-center">
-            Her finder du vores udvalg af flotte kunstplakater, klar til at
-            komme op og hænge på din væg;-)
-          </p>
-          <p class="pt-8 text-center text-base leading-normal sm:leading-4">
-            Kategorier: <a href="kategori.html" class="underline">Naturen</a> /
-            <a href="kategori.html" class="underline">Byen</a> /
-            <a href="kategori.html" class="underline">Sort/hvid</a> /
-            <a href="kategori.html" class="underline">Minimalisme</a>
-          </p>
-        </div>
         <div
           class="mt-8 grid grid-cols-1 gap-6 md:mt-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-4"
         >
