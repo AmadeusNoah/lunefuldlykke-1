@@ -23,7 +23,7 @@
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 
 
-  <div class="w-screen fixed bottom-0 z-10 bg-gray-100 flex items-center justify-center px-5 py-5" x-data="{showCookieBanner:true}">
+  <div class="w-screen fixed bottom-0 z-10   flex items-center justify-center px-5 py-5" x-data="{showCookieBanner:true}">
     <section class="w-full p-5 lg:px-24 absolute bottom-0 bg-gray-600" x-show="showCookieBanner">
         <div class="md:flex items-center -mx-3">
             <div class="md:flex-1 px-3 mb-5 md:mb-0">
@@ -455,7 +455,7 @@
     <!-- Content -->
 
     <!-- --hero start----- -->
-        <section class="relative bg-white">
+        <section class="relative bg-white max-h-[80vh]">
           <img
             class="absolute inset-0 h-full w-full object-cover object-[75%] opacity-25 sm:object-[25%] sm:opacity-100"
             src="content/spacejoy-IH7wPsjwomc-unsplash.jpg"
@@ -467,17 +467,17 @@
           ></div>
 
           <div
-            class="relative mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+            class="relative mx-auto max-w-[80vw] px-4 pb-32 lg:flex lg:h-[90vh] lg:items-center"
           >
-            <div class="max-w-xl text-center sm:text-left">
-              <h1 class="text-3xl font-extrabold sm:text-5xl">
+            <div class=" text-center sm:text-left">
+              <h1 class="lg:text-7xl font-extrabold sm:text-5xl">
                 Fyld dit hjem med
                 <strong class="font-extrabold yellow-rose-700 sm:block">
                   Lunefuld Lykke
                 </strong>
               </h1>
 
-              <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
+              <p class="mt-4 max-w-lg sm:text-2xl sm:leading-relaxed">
                 Udforsk vores store udvalg af plakater og litteratur til dit hjem. Vi hjælper med at skabe dit hjem lunefuldt og hyggeligt. 
               </p>
 
@@ -497,36 +497,26 @@
         <!-- Hero slut -->
 
         <!-- Featured categories-->
-        <div class="pt-8">
-          <h2 class="text-center text-4xl">Plakater - Bestsellers </h2>
+        <div class="pt-32 w-[80vw] m-auto">
+          <h2 class="text-center text-4xl font-bold uppercase">Plakater - Bestsellers </h2>
           <div class="mt-10 grid items-center gap-x-8 gap-y-8 lg:grid-cols-4">
-            <div
-              class="group justify-left relative flex bg-gray-50 px-8 pt-36 pb-36 transition duration-500 group-hover:bg-opacity-60 sm:pt-28 sm:pb-8"
-            >
-              <a href="kategori.html"
-                ><img
-                  class="transition duration-500 group-hover:opacity-60"
-                  src="content/trae-poster.jpg"
-                  alt="sofa-4"
-              /></a>
-              <div
-                class="absolute top-4 left-4 flex flex-col items-start justify-start space-y-2 sm:top-8 sm:left-8"
-              >
+
+            <div class="group justify-left relative flex bg-gray-50 px-8 pt-36 pb-36 transition duration-500 group-hover:bg-opacity-60 sm:pt-28 sm:pb-8">
+              
+              <div class="absolute top-4 left-4 flex flex-col items-start justify-start space-y-2 sm:top-8 sm:left-8">
                 <div>
-                  <p
-                    class="text-xl leading-5 text-gray-600 transition duration-500 group-hover:opacity-60"
-                  >
-                    Plakater med naturen i fokus
-                  </p>
+                  <p class="text-xl leading-5 text-gray-600 transition duration-500 group-hover:opacity-60"> Plakater med naturen i fokus</p>
                 </div>
                 <div>
-                  <p
-                    class="text-xl font-semibold leading-5 text-gray-800 transition duration-500 group-hover:opacity-60"
-                  >
-                    Fra 199.-
-                  </p>
+                  <p class="text-xl font-semibold leading-5 text-gray-800 transition duration-500 group-hover:opacity-60">Fra 199.-</p>
                 </div>
               </div>
+
+              <a href="kategori.html">
+                <img class="transition duration-500 group-hover:opacity-60" src="content/trae-poster.jpg" alt="sofa-4"/>
+              </a>
+
+
             </div>
 
             <div
@@ -623,12 +613,12 @@
         <!-- Featured categories slut -->
 
         <!-- Featured categories-->
-        <div class="pt-8">
-          <h2 class="text-center text-4xl">Litteratur - Bestsellers</h2>
+        <div class="pt-32 w-[80vw] m-auto">
+          <h2 class="text-center text-4xl uppercase font-bold">Litteratur - Bestsellers</h2>
           <div class="mt-10 grid items-center gap-x-8 gap-y-8 lg:grid-cols-4">
             <div
               class="group justify-left relative flex bg-gray-50 px-8 pt-36 pb-36 transition duration-500 group-hover:bg-opacity-60 sm:pt-28 sm:pb-8"
-            >
+              >
               <a href="kategori_boeger.html"
                 ><img
                   class="transition duration-500 group-hover:opacity-60"
@@ -653,7 +643,38 @@
                   </p>
                 </div>
               </div>
+              </div>
+
+
+              <div
+              class="group justify-left relative flex bg-gray-50 px-8 pt-36 pb-36 transition duration-500 group-hover:bg-opacity-60 sm:pt-28 sm:pb-8"
+              >
+              <a href="kategori_boeger.html"
+              ><img
+                class="transition duration-500 group-hover:opacity-60"
+                src="content/litteratur/the_unsplash_book_af_unsplash_community.jpg"
+                alt="sofa-4"
+              /></a>
+              <div
+              class="absolute top-4 left-4 flex flex-col items-start justify-start space-y-2 sm:top-8 sm:left-8"
+              >
+              <div>
+                <p
+                  class="text-xl leading-5 text-gray-600 transition duration-500 group-hover:opacity-60"
+                >
+                  Plakater med naturen i fokus
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-xl font-semibold leading-5 text-gray-800 transition duration-500 group-hover:opacity-60"
+                >
+                  Fra 199.-
+                </p>
+              </div>
             </div>
+          </div>
+
 
             <div
               class="group justify-left relative flex bg-gray-50 px-8 pt-36 pb-36 transition duration-500 group-hover:bg-opacity-60 sm:pt-28 sm:pb-8"
@@ -712,286 +733,464 @@
                 </div>
               </div>
             </div>
-
-            <div
-              class="group justify-left relative flex bg-gray-50 px-8 pt-36 pb-36 transition duration-500 group-hover:bg-opacity-60 sm:pt-28 sm:pb-8"
-            >
-              <a href="kategori_boeger.html"
-                ><img
-                  class="max-h-16 transition duration-500 group-hover:opacity-60"
-                  src="content/litteratur/the_unsplash_book_af_unsplash_community.jpg"
-                  alt="sofa-4"
-              /></a>
-              <div
-                class="absolute top-4 left-4 flex flex-col items-start justify-start space-y-2 sm:top-8 sm:left-8"
-              >
-                <div>
-                  <p
-                    class="text-xl leading-5 text-gray-600 transition duration-500 group-hover:opacity-60"
-                  >
-                    Minimalistiske plakater
-                  </p>
-                </div>
-                <div>
-                  <p
-                    class="text-xl font-semibold leading-5 text-gray-800 transition duration-500 group-hover:opacity-60"
-                  >
-                    Fra 199.-
-                  </p>
-                </div>
-              </div>  
-            </div>
           </div>
+
           <div class="flex place-content-center py-8">
             <button class="bg-yellow-600 p-4 text-white">Se al litteratur</button>
           </div>
         </div>
         <!-- Featured categories slut -->
+
+        <section class="bg-gray-200 mt-32">
+          <div class="max-w-[80vw] px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
+            <div class="max-w-xl mx-auto text-center">
+              <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+                Vores kunder siger
+              </h2>
+        
+              <p class="max-w-lg mx-auto mt-4 text-gring-offset-warm-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                praesentium natus sapiente commodi. 
+              </p>
+            </div>
+        
+            <div
+              class="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-2 lg:grid-cols-3 sm:gap-16"
+            >
+              <div class="bg-white pt-10">
+                <img
+                  src="https://www.hyperui.dev/photos/man-4.jpeg"
+                  alt=""
+                  class="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
+                />
+        
+                <blockquote
+                  class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
+                >
+                  <p class="text-lg font-bold text-gray-700">Katie</p>
+                  <p class="mt-1 text-xs font-medium text-gray-500">
+                    Digital Marketing at Studio
+                  </p>
+                  <p class="mt-4 text-sm text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                    voluptatem alias ut provident sapiente repellendus.
+                  </p>
+        
+                  <div class="flex space-x-0.5 justify-center mt-8 text-green-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+                </blockquote>
+              </div>
+        
+              <div class="bg-white pt-10">
+                <img
+                  src="https://www.hyperui.dev/photos/man-4.jpeg"
+                  alt=""
+                  class="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
+                />
+        
+                <blockquote
+                  class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
+                >
+                  <p class="text-lg font-bold text-gray-700">Katie</p>
+                  <p class="mt-1 text-xs font-medium text-gray-500">
+                    Digital Marketing at Studio
+                  </p>
+                  <p class="mt-4 text-sm text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                    voluptatem alias ut provident sapiente repellendus.
+                  </p>
+        
+                  <div class="flex space-x-0.5 justify-center mt-8 text-green-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+                </blockquote>
+              </div>
+        
+              <div class="bg-white pt-10">
+                <img
+                  src="https://www.hyperui.dev/photos/man-4.jpeg"
+                  alt=""
+                  class="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
+                />
+        
+                <blockquote
+                  class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
+                >
+                  <p class="text-lg font-bold text-gray-700">Katie</p>
+                  <p class="mt-1 text-xs font-medium text-gray-500">
+                    Digital Marketing at Studio
+                  </p>
+                  <p class="mt-4 text-sm text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                    voluptatem alias ut provident sapiente repellendus.
+                  </p>
+        
+                  <div class="flex space-x-0.5 justify-center mt-8 text-green-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+                </blockquote>
+              </div>
+      
+              </div>
+            </div>
+          </div>
+        </section>
+     <!-- sektion om artister start----- -->
+
+     <div class=" bg-white py-32 w-[80vw] m-auto">  
+      <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+          <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+            <div class="md:5/12 lg:w-5/12">
+              <img src="./content/277685226_1817095685154947_6739487792693222800_n.jpg" alt="image" loading="lazy" width="" height="">
+            </div>
+            <div class="md:7/12 lg:w-6/12">
+              <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">"Kunsten fik mig på rette vej"</h2>
+              <p class="mt-6 text-gray-600">I 2020 fik gik jeg ned med stress og måtte sygemnelde mig fra arbejdet. Min psykolog sagde jeg burde finde mig en hoppy så jeg kunne fordybe mig i noget andet end hverdag.</p>
+              <p class="mt-4 text-gray-600">Jeg begyndte at få gang i penselerne og får <br> hvert penselstrøg fik jeg det bedre.</p>
+              <div class="mt-8 flex flex-wrap gap-4 text-center">
+                <a
+                  class="block w-full bg-yellow-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                  href="./shop.html"
+                >
+                 LÆS MERE OM KUNSTEREN 
+              </a>
+    </div>
+            </div>
+              
+            </div>
+          </div>
       </div>
     </div>
+     <!-- sektion om artister slut----- -->
+     
 
-    <section class="bg-gray-200">
-      <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
-        <div class="max-w-xl mx-auto text-center">
-          <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-            Vores kunder siger
-          </h2>
-    
-          <p class="max-w-lg mx-auto mt-4 text-gring-offset-warm-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            praesentium natus sapiente commodi. 
-          </p>
-        </div>
-    
-        <div
-          class="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-2 lg:grid-cols-3 sm:gap-16"
-        >
-          <div>
-            <img
-              src="https://www.hyperui.dev/photos/man-4.jpeg"
-              alt=""
-              class="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
-            />
-    
-            <blockquote
-              class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
-            >
-              <p class="text-lg font-bold text-gray-700">Katie</p>
-              <p class="mt-1 text-xs font-medium text-gray-500">
-                Digital Marketing at Studio
-              </p>
-              <p class="mt-4 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                voluptatem alias ut provident sapiente repellendus.
-              </p>
-    
-              <div class="flex space-x-0.5 justify-center mt-8 text-green-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-              </div>
-            </blockquote>
-          </div>
-    
-          <div>
-            <img
-              src="https://www.hyperui.dev/photos/man-4.jpeg"
-              alt=""
-              class="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
-            />
-    
-            <blockquote
-              class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
-            >
-              <p class="text-lg font-bold text-gray-700">Katie</p>
-              <p class="mt-1 text-xs font-medium text-gray-500">
-                Digital Marketing at Studio
-              </p>
-              <p class="mt-4 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                voluptatem alias ut provident sapiente repellendus.
-              </p>
-    
-              <div class="flex space-x-0.5 justify-center mt-8 text-green-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-              </div>
-            </blockquote>
-          </div>
-    
-          <div class="">
-            <img
-              src="https://www.hyperui.dev/photos/man-4.jpeg"
-              alt=""
-              class="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
-            />
-    
-            <blockquote
-              class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
-            >
-              <p class="text-lg font-bold text-gray-700">Katie</p>
-              <p class="mt-1 text-xs font-medium text-gray-500">
-                Digital Marketing at Studio
-              </p>
-              <p class="mt-4 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                voluptatem alias ut provident sapiente repellendus.
-              </p>
-    
-              <div class="flex space-x-0.5 justify-center mt-8 text-green-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-              </div>
-            </blockquote>
-          </div>
-  
-          </div>
-        </div>
+
+     
+     <section class="w-[80vw] m-auto">
+      <h2 class="text-4xl text-center uppercase font-bold">Mød vores kunstnere</h2>
+      <p class="max-w-[75ch] text-center m-auto pt-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, magnam! Cupiditate optio quibusdam, quo odio cum quae repellendus ipsa assumenda mollitia aspernatur? Recusandae sequi eos labore, assumenda error ea laudantium. </p>
+      <div class="w-[50vw] m-auto flex flex-wrap justify-between text-xl gap-4 pt-6">
+        <p class="hover:underline">A</p>
+        <p class="hover:underline">B</p>
+        <p class="hover:underline">C</p>
+        <p class="hover:underline">D</p>
+        <p class="hover:underline">E</p>
+        <p class="hover:underline">F</p>
+        <p class="hover:underline">G</p>
+        <p class="hover:underline">H</p>
+        <p class="hover:underline">I</p>
+        <p class="hover:underline">J</p>
+        <p class="hover:underline">K</p>
+        <p class="hover:underline">L</p>
+        <p class="hover:underline">M</p>
+        <p class="hover:underline">M</p>
+        <p class="hover:underline">O</p>
+        <p class="hover:underline">P</p>
+        <p class="hover:underline">Q</p>
+        <p class="hover:underline">R</p>
+        <p class="hover:underline">S</p>
+        <p class="hover:underline">T</p>
+        <p class="hover:underline">U</p>
+        <p class="hover:underline">V</p>
+        <p class="hover:underline">W</p>
+        <p class="hover:underline">X</p>
+        <p class="hover:underline">Y</p>
+        <p class="hover:underline">Z</p>
+        <p class="hover:underline">Æ</p>
+        <p class="hover:underline">Ø</p>
+        <p class="hover:underline">Å</p>
       </div>
-    </section>
+
+      <div class="flex justify-between flex-wrap gap-8 py-32">
+        <a class="relative block bg-black group max-w-xs h-auto" href="">
+          <img
+            class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
+            src="https://www.hyperui.dev/photos/man-6.jpeg"
+            alt=""
+          />
+          <div class="relative p-8">
+            <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
+              Illustrator
+            </p>
+        
+            <p class="text-2xl font-bold text-white">Barry Scott</p>
+        
+            <div class="mt-64">
+              <div
+                class="transition-all transform translate-y-8 opacity-0  group-hover:opacity-100 group-hover:translate-y-0"
+              >
+                <p class="text-sm text-white">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                  perferendis hic asperiores quibusdam quidem voluptates doloremque
+                  reiciendis nostrum harum. Repudiandae?
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="relative block bg-black group max-w-xs h-auto " href="">
+          <img
+            class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
+            src="https://www.hyperui.dev/photos/man-6.jpeg"
+            alt=""
+          />
+          <div class="relative p-8">
+            <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
+              Illustrator
+            </p>
+        
+            <p class="text-2xl font-bold text-white">Barry Scott</p>
+        
+            <div class="mt-64">
+              <div
+                class="transition-all transform translate-y-8 opacity-0  group-hover:opacity-100 group-hover:translate-y-0"
+              >
+                <p class="text-sm text-white">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                  perferendis hic asperiores quibusdam quidem voluptates doloremque
+                  reiciendis nostrum harum. Repudiandae?
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="relative block bg-black group max-w-xs h-auto" href="">
+          <img
+            class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
+            src="https://www.hyperui.dev/photos/man-6.jpeg"
+            alt=""
+          />
+          <div class="relative p-8">
+            <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
+              Illustrator
+            </p>
+        
+            <p class="text-2xl font-bold text-white">Barry Scott</p>
+        
+            <div class="mt-64">
+              <div
+                class="transition-all transform translate-y-8 opacity-0  group-hover:opacity-100 group-hover:translate-y-0"
+              >
+                <p class="text-sm text-white">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                  perferendis hic asperiores quibusdam quidem voluptates doloremque
+                  reiciendis nostrum harum. Repudiandae?
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="relative block bg-black group max-w-xs h-auto" href="">
+          <img
+            class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
+            src="https://www.hyperui.dev/photos/man-6.jpeg"
+            alt=""
+          />
+          <div class="relative p-8">
+            <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
+              Illustrator
+            </p>
+        
+            <p class="text-2xl font-bold text-white">Barry Scott</p>
+        
+            <div class="mt-64">
+              <div
+                class="transition-all transform translate-y-8 opacity-0  group-hover:opacity-100 group-hover:translate-y-0"
+              >
+                <p class="text-sm text-white">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                  perferendis hic asperiores quibusdam quidem voluptates doloremque
+                  reiciendis nostrum harum. Repudiandae?
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="relative block bg-black group max-w-xs h-auto" href="">
+          <img
+            class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
+            src="https://www.hyperui.dev/photos/man-6.jpeg"
+            alt=""
+          />
+          <div class="relative p-8">
+            <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
+              Illustrator
+            </p>
+        
+            <p class="text-2xl font-bold text-white">Barry Scott</p>
+        
+            <div class="mt-64">
+              <div
+                class="transition-all transform translate-y-8 opacity-0  group-hover:opacity-100 group-hover:translate-y-0"
+              >
+                <p class="text-sm text-white">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                  perferendis hic asperiores quibusdam quidem voluptates doloremque
+                  reiciendis nostrum harum. Repudiandae?
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+       
+
+        
+      </div>
+
+     </section>
+    
 
 
     <!-- Content slut-->
@@ -1211,33 +1410,7 @@
   
       
     <!-- kontakpopup slut -->
-      <!-- sektion om artister start----- -->
-
-<div class="py-16 bg-white">  
-  <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-      <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-        <div class="md:5/12 lg:w-5/12">
-          <img src="./content/277685226_1817095685154947_6739487792693222800_n.jpg" alt="image" loading="lazy" width="" height="">
-        </div>
-        <div class="md:7/12 lg:w-6/12">
-          <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">"Kunsten fik mig på rette vej"</h2>
-          <p class="mt-6 text-gray-600">I 2020 fik gik jeg ned med stress og måtte sygemnelde mig fra arbejdet. Min psykolog sagde jeg burde finde mig en hoppy så jeg kunne fordybe mig i noget andet end hverdag.</p>
-          <p class="mt-4 text-gray-600">Jeg begyndte at få gang i penselerne og får <br> hvert penselstrøg fik jeg det bedre.</p>
-          <div class="mt-8 flex flex-wrap gap-4 text-center">
-            <a
-              class="block w-full bg-yellow-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-              href="./shop.html"
-            >
-             LÆS MERE OM KUNSTEREN 
-          </a>
-</div>
-        </div>
-          
-        </div>
-      </div>
-  </div>
-</div>
- <!-- sektion om artister slut----- -->
+ 
 
 
     <!-- Footer -->
